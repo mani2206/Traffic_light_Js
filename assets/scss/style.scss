@@ -1,0 +1,63 @@
+@import "./abstracts/variables";
+@import "./abstracts/common";
+@import "./abstracts/variables";
+@import "./includes/footer";
+@import "./includes/header";
+@import "./mixins/breakpoints";
+
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.traffic-light{
+  width: 100px;
+  background-color: #000;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px #000;
+}
+
+.light{
+  width: 80px;
+  height: 80px;
+  margin:10px 0;
+border-radius: 50%;
+background-color: #333;
+box-shadow: inset 0 0 10px #000;
+
+}
+
+.red{
+  background-color: #8b0000;
+}
+
+.orange{
+   background-color: #ff8c00;
+
+}
+
+.green{
+  background-color: #006400;
+}
+
+
+.red.active{
+  background-color: #ff0000;
+}
+
+.orange.active{
+   background-color: #ffa500;
+
+}
+
+.green.active{
+  background-color: #00ff00;
+}
